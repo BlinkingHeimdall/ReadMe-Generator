@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const markDown = require('./utils/generateMarkdown.js');
-//const writeFile = require('./utils/fileGen.js');//
+const writeFile = require('./utils/fileGen.js');
 
 const init = () => {
     return inquirer.prompt([
