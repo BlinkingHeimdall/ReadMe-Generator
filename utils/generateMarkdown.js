@@ -54,7 +54,6 @@ module.exports = data => {
   
   return `
 # ${data.projectName}
-${renderBadge(data.license)}
 ## Description
 ${data.summary}
 ## Table of Contents
@@ -80,6 +79,7 @@ ${data.contributionInfo}
 [https://github.com/${data.username}](https://github.com/${data.username})
 If you have any questions or issues, you can reach me at: ${data.emailAddress}
 ##License
+${renderBadge(data.license)}
 ${renderLicense(data.license)}
 `;
 };
