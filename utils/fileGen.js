@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs');
 
 module.exports = fileContent => {
     return new Promise((resolve, reject) => {
@@ -8,7 +8,7 @@ module.exports = fileContent => {
                 return;
             }
             resolve({
-                ok:true
+                ok: true,
                 message: 'README Created, Check It Out!'
             });
         });
