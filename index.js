@@ -55,7 +55,6 @@ const promptUser = () => {
             }}
         },
         {
-        {
             type: 'input',
             name: 'installInfo',
             message: 'What command should be run to install dependencies?',
@@ -102,23 +101,23 @@ const promptUser = () => {
                 console.log('Please enter directions for a user');
                 return false;
             }}
-        }
+        },
         {
             type: 'list',
             name: 'licenseInfo',
             message: 'Which license was used for your project?',
             choices: [
                 'None',
-                'AGPL-3.0',
-                'APACHE-2.0',
-                'BSL-1.0',
-                'GPL-3.0',
-                'LGPL-3.0',
+                'AGPL 3.0',
+                'APACHE 2.0',
+                'BSD',
+                'BSL 1.0',
+                'GPL 3.0',
+                'LGPL 3.0',
                 'MIT',
-                'MPL-2.0',
-                'Unlicense'
-            ]
-        },
+                'Mozilla 2.0',
+                'Unlicensed'
+            ]},
     ])
 };
 
