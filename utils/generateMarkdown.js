@@ -54,32 +54,46 @@ module.exports = data => {
   
   return `
 # ${data.projectName}
+
+${renderBadge(data.license)}
+${renderLicense(data.license)}
+
 ## Description
 ${data.summary}
+
 ## Table of Contents
+- [License](#license)
 - [Installation](#installation)
 - [Testing](#testing)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Questions](#questions)
-- [License](#license)
+
 ## Installation
 ~~~
 ${data.installInfo}
 ~~~
+
 ## Testing
 ~~~
 ${data.testInfo}
 ~~~
+
 ## Usage
 ${data.usageInfo}
+
 ## Contributing
 ${data.contributionInfo}
+
 ## Questions
 [https://github.com/${data.username}](https://github.com/${data.username})
 If you have any questions or issues, you can reach me at: ${data.emailAddress}
-##License
-${renderBadge(data.license)}
-${renderLicense(data.license)}
+
+![badge](https://img.shields.io/github/contributors/${data.username}/${data.projectName})
+
+
+
+This README was created with a ReadMe-Generator https://github.com/BlinkingHeimdall/ReadMe-Generator if you have any issues please contact me on twitter.
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40northstarla41)](https://twitter.com/Northstarla41)
 `;
 };
